@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FosterLog — Privacy Policy</title>
+<link rel="alternate" hreflang="fr" href="fr/privacy.html">
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -11,95 +12,128 @@
     max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 6rem;
     color: #1c1c1e; background: #fff;
   }
-  @media (prefers-color-scheme: dark) { body { color: #e8eaee; background: #14161a; } }
+  @media (prefers-color-scheme: dark) { body { color: #e8eaee; background: #14161a; } a { color: #6fc3b1; } }
+  a { color: #2f7d6e; }
   h1 { font-size: 2rem; letter-spacing: -0.02em; margin-bottom: 0.25rem; }
   h2 { font-size: 1.1rem; margin-top: 2.25rem; }
   .sub { color: #5b6168; margin-top: 0; }
+  .lang { float: right; font-size: 0.9rem; }
   .box { border-left: 3px solid #2f7d6e; padding: 0.1rem 0 0.1rem 1rem; margin: 1.5rem 0; }
 </style>
 </head>
 <body>
 
+<a class="lang" href="fr/privacy.html">Français</a>
 <h1>FosterLog Privacy Policy</h1>
-<p class="sub">Last updated 15 August 2026</p>
+<p class="sub">Last updated 6 October 2026 · applies to FosterLog 1.1 and later</p>
 
 <div class="box">
 <p><strong>The short version.</strong> FosterLog collects nothing. There is no
 account, no analytics and no server. Everything you record — children's names,
-notes, documents, photos, videos, mileage — stays on your own device and in your
-own iCloud account. We cannot see any of it, and neither can anyone else.</p>
+notes, documents, photos, videos, mileage — stays on your own device, in your
+own iCloud account if you choose, and in backup files you create yourself.
+We cannot see any of it.</p>
 </div>
 
 <h2>Who this is for</h2>
-<p>FosterLog is used by foster and kinship carers to keep records about children
-in their care. We understand what that means. The records you keep here are
-among the most sensitive a person can hold, and the app is built so that no
-copy of them ever reaches us.</p>
+<p>FosterLog is used by foster and kinship caregivers to keep records about
+children in their care. The records you keep here are among the most sensitive
+a person can hold, and the app is built so that no copy of them ever reaches us.</p>
 
 <h2>What we collect</h2>
 <p>Nothing. There is no sign-up, no email address, no username, no device
-identifier and no usage tracking. We do not use analytics software, advertising
-software, crash reporting services or any third-party SDK that transmits data.</p>
+identifier and no usage tracking. We do not use analytics, advertising, crash
+reporting or any third-party code that transmits data. Our App Store privacy
+label is “Data Not Collected”.</p>
 
 <h2>Where your records live</h2>
-<p>Everything you enter is stored on your iPhone or iPad. If you have iCloud
-turned on, your records also sync through <strong>your own private iCloud
-account</strong> so they appear on your other devices and survive a lost phone.
-That data belongs to you and is governed by
-<a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.
-We have no access to it — no server, no keys, no admin view.</p>
+<ul>
+  <li><strong>On your device.</strong> Everything you enter is stored inside
+      FosterLog on your iPhone.</li>
+  <li><strong>In your own iCloud (FosterLog Pro, optional).</strong> Pro users'
+      records sync through their <em>own private</em> iCloud account so they
+      survive a lost or replaced phone. That data is governed by
+      <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>;
+      we have no access to it.</li>
+  <li><strong>In backup files you create (optional).</strong> Settings ▸ Backup
+      &amp; restore saves all your records, photos, receipts, videos and documents
+      into one <code>.fosterlog</code> file. The app hands that file to the iOS share
+      sheet; <em>you</em> choose where it goes (Files, iCloud Drive, AirDrop to your
+      computer…). We never receive it.</li>
+</ul>
+
+<h2>Password-protected backups</h2>
+<p>When you set a password, the backup file is encrypted on your iPhone with
+AES-256-GCM, using a key derived from your password (PBKDF2-SHA256). The password
+is never stored or sent anywhere. Without it, the file can't be opened —
+<strong>not even by us</strong>, so we can't help recover a forgotten password.
+If you choose not to use a password, anyone who obtains the file can read it, so
+keep it somewhere private.</p>
+
+<h2>Restoring a backup</h2>
+<p>Restoring reads a backup file you pick and replaces the records on that iPhone.
+The file is fully checked before anything is replaced. Photos and receipts that
+belonged only to the replaced records are removed from the device.</p>
 
 <h2>Permissions the app asks for</h2>
 <ul>
-  <li><strong>Camera</strong> — only when you scan a document or record a short
-      video for your records. Images and video are saved into FosterLog on your
-      device and are never uploaded.</li>
-  <li><strong>Microphone</strong> — only when you record a video with sound for
-      a behaviour note. Audio stays with that recording on your device.</li>
-  <li><strong>Location</strong> — only when you tag a mileage trip. The
-      coordinates are stored with that trip entry on your device. Location is
-      never collected in the background and never transmitted.</li>
-  <li><strong>Face ID / Touch ID</strong> — only if you turn on the app lock.
-      iOS returns a yes-or-no answer to FosterLog; the app never receives or
-      stores biometric data.</li>
+  <li><strong>Camera</strong> — only when you scan a document or receipt, or record
+      a short video. Images and video are saved inside FosterLog on your device.</li>
+  <li><strong>Microphone</strong> — only when you record a video with sound.</li>
+  <li><strong>Photos</strong> — only the photos or videos you pick are copied into
+      FosterLog; the app can't browse your library.</li>
+  <li><strong>Location</strong> — only when you tag a mileage trip. Stored with that
+      trip on your device; never collected in the background.</li>
+  <li><strong>Face ID / Touch ID</strong> — only if you turn on the app lock. iOS
+      answers yes or no; the app never receives biometric data.</li>
+  <li><strong>Notifications</strong> — appointment, court and medication reminders
+      are scheduled locally on your iPhone, not through any server.</li>
 </ul>
-<p>Decline any of these and the rest of the app works normally.</p>
+<p><strong>Calendar:</strong> “Add to Calendar” opens Apple's own event editor.
+FosterLog does <em>not</em> ask for access to your calendars and can't read them.
+Only the child's initials are placed in the event title, because calendars often
+sync to other services. You review the event before saving it.</p>
+<p>Decline any permission and the rest of the app keeps working.</p>
+
+<h2>Exports and sharing</h2>
+<p>PDF reports and CSV files are generated on your device. They leave it only
+when you send them yourself — for example to a caseworker by email. “Share
+FosterLog” sends only a link to the App Store, never your records.</p>
 
 <h2>Children's data</h2>
 <p>Records in FosterLog often concern children. Because the app transmits
-nothing, no child's information is ever collected by us, shared with anyone, or
-used for any purpose. FosterLog is a tool for the adult keeping the records; it
-is not directed at children and collects nothing from them.</p>
-
-<h2>What we share</h2>
-<p>Nothing, with anyone, ever. We hold no data, so there is nothing to sell,
-disclose, hand over or lose in a breach. You share a record only when you
-deliberately export or print it yourself.</p>
+nothing to us, no child's information is ever collected by us, shared, or used
+for any purpose. FosterLog is a tool for the adult keeping the records; it is not
+directed at children.</p>
 
 <h2>Purchases</h2>
-<p>Any purchase is handled entirely by Apple. We never see your name, payment
-details or billing address — only whether this device holds a valid purchase.</p>
+<p>FosterLog Pro is a one-time purchase handled entirely by Apple (and can be
+shared through Apple Family Sharing). We never see your name or payment details —
+only whether this device holds a valid purchase.</p>
 
 <h2>Deleting your data</h2>
-<p>Delete a record in the app and it is gone from the device. Delete the app and
-its local data goes with it. To remove the synced copy, open
-<em>Settings → [your name] → iCloud → Manage Account Storage</em>, find
-FosterLog and delete its data there.</p>
+<p>Delete a record and it is gone from the device. Settings ▸ Delete all data
+removes every child and record. Deleting the app removes its on-device data.
+To remove the iCloud copy (Pro), open <em>Settings ▸ [your name] ▸ iCloud ▸
+Manage Account Storage</em>, find FosterLog and delete its data. Backup files you
+created are yours to delete wherever you saved them.</p>
 
 <h2>Your rights</h2>
-<p>Laws such as the GDPR and CCPA give you rights to access, correct, export and
-delete personal data held about you. We hold none, so there is nothing for us to
-produce or erase — your records are already entirely in your hands.</p>
+<p>Laws such as Quebec's Law 25, PIPEDA, the GDPR and the CCPA give you rights to
+access, correct, export and delete personal data held about you. We hold none —
+your records are already entirely in your hands.</p>
+<p>Person responsible for the protection of personal information: Fredy Soussou
+(TechBitsMix), <a href="mailto:TechBitsMix@gmail.com">TechBitsMix@gmail.com</a>.</p>
 
 <h2>Changes</h2>
-<p>If this policy ever changes, the date at the top changes with it. Any change
-that affected what the app collects would be described plainly here first.</p>
+<p>If this policy changes, the date at the top changes with it. Any change to
+what the app collects would be described plainly here first.</p>
 
 <h2>Contact</h2>
-<p>Questions about privacy, or anything else:
+<p>Privacy questions, or anything else:
 <a href="mailto:TechBitsMix@gmail.com">TechBitsMix@gmail.com</a>.</p>
 
-<footer style="margin-top:4rem;color:#5b6168;font-size:0.9rem">© 2026 TechBitsMix</footer>
+<footer style="margin-top:4rem;color:#5b6168;font-size:0.9rem">© 2026 TechBitsMix · <a href="./">FosterLog home</a></footer>
 
 </body>
 </html>

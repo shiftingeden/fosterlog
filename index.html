@@ -4,97 +4,100 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FosterLog — Private records for foster &amp; kinship parents</title>
-<meta name="description" content="FosterLog is a private, on-device record-keeping app for foster and kinship parents: visits, medications, behavior, court & custody, expenses — and one-tap caseworker-ready PDFs.">
+<meta name="description" content="FosterLog is a private, on-device record-keeping app for foster and kinship parents: visits, medications, behavior, court & custody, respite, expenses — and one-tap caseworker-ready PDFs. In English and French.">
+<link rel="alternate" hreflang="fr" href="fr/">
 <style>
-  :root{ --teal:#2f7d6e; --teal-dark:#256356; --teal-soft:#e6f1ee; --ink:#1c1c1e; --ink2:#5b6168; --line:#e4e6e9; }
+  :root{ --teal:#2f7d6e; --teal-dark:#256356; --teal-soft:#e6f1ee; --ink:#1c1c1e; --ink2:#5b6168; --line:#e4e6e9; --bg:#fff; }
+  @media (prefers-color-scheme: dark){ :root{ --teal-soft:#1d3531; --ink:#e8eaee; --ink2:#a3a9b0; --line:#2a2e33; --bg:#14161a; } a{ color:#6fc3b1; } }
   *{box-sizing:border-box;}
   body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-        color:var(--ink); line-height:1.6; }
+        color:var(--ink); background:var(--bg); line-height:1.6; }
   a{ color:var(--teal); }
   .wrap{ max-width:760px; margin:0 auto; padding:0 22px; }
-  header{ background:linear-gradient(160deg,var(--teal),var(--teal-dark)); color:#fff; padding:64px 0 56px; text-align:center; }
+  header{ background:linear-gradient(160deg,var(--teal),var(--teal-dark)); color:#fff; padding:56px 0 52px; text-align:center; position:relative; }
+  header .lang{ position:absolute; top:16px; right:20px; color:#fff; font-size:14px; opacity:.9; }
   .leaf{ font-size:54px; }
   header h1{ font-size:40px; margin:8px 0 6px; letter-spacing:-.5px; }
   header p{ font-size:18px; opacity:.92; margin:0 auto; max-width:560px; }
   .badge{ display:inline-block; margin-top:22px; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.35);
            color:#fff; padding:8px 16px; border-radius:24px; font-size:14px; }
-  section{ padding:46px 0; border-bottom:1px solid var(--line); }
-  h2{ font-size:24px; color:var(--teal-dark); margin:0 0 16px; }
+  .store{ display:inline-block; margin-top:14px; color:#fff; font-weight:600; }
+  section{ padding:44px 0; border-bottom:1px solid var(--line); }
+  h2{ font-size:24px; color:var(--teal); margin:0 0 16px; }
   h3{ font-size:17px; margin:22px 0 4px; }
   .feat{ display:flex; gap:14px; align-items:flex-start; margin:16px 0; }
   .feat .i{ font-size:22px; line-height:1.3; }
   .feat .t{ font-weight:600; }
   .feat .d{ color:var(--ink2); font-size:15px; }
+  .new{ font-size:11px; font-weight:700; color:var(--teal); background:var(--teal-soft); padding:1px 7px; border-radius:10px; margin-left:6px; vertical-align:2px; }
   .muted{ color:var(--ink2); font-size:14px; }
-  ul{ padding-left:20px; }
   footer{ text-align:center; color:var(--ink2); font-size:13px; padding:30px 0 50px; }
   .pill{ display:inline-block; background:var(--teal-soft); color:var(--teal-dark); padding:3px 10px; border-radius:20px; font-size:13px; }
 </style>
 </head>
 <body>
   <header>
+    <a class="lang" href="fr/">Français</a>
     <div class="leaf">🌿</div>
     <h1>FosterLog</h1>
-    <p>Private, on-device record-keeping for foster &amp; kinship parents — visits, medications, behavior, court &amp; custody, and expenses, with one-tap caseworker-ready PDFs.</p>
-    <div class="badge">Your data stays on your iPhone — no account, nothing uploaded</div>
+    <p>Private, on-device record-keeping for foster &amp; kinship parents — visits, medications, behavior, court &amp; custody, respite and expenses, with one-tap caseworker-ready PDFs.</p>
+    <div class="badge">Your data stays on your iPhone — no account, nothing uploaded</div><br>
+    <a class="store" href="https://apps.apple.com/app/id6783381929">Download on the App Store →</a>
   </header>
 
   <div class="wrap">
 
     <section id="features">
       <h2>What it does</h2>
-      <div class="feat"><div class="i">👨‍👩‍👧</div><div><div class="t">Visits &amp; contact</div><div class="d">Log family visits with before/after notes and attendance — including no-shows and cancellations.</div></div></div>
-      <div class="feat"><div class="i">📞</div><div><div class="t">Communication log</div><div class="d">Track calls, texts and emails with birth parents, attorneys, GAL and caseworkers — including “no answer” attempts.</div></div></div>
-      <div class="feat"><div class="i">⚖️</div><div><div class="t">Court &amp; custody</div><div class="d">Hearings, reviews, and custody/placement changes, with reminders.</div></div></div>
-      <div class="feat"><div class="i">💊</div><div><div class="t">Medications</div><div class="d">Flexible schedules and dose tracking so you don’t over- or under-dose — with reminders you clear by confirming.</div></div></div>
-      <div class="feat"><div class="i">🧾</div><div><div class="t">Expenses &amp; mileage</div><div class="d">Reimbursable and out-of-pocket costs, plus spending per child per month.</div></div></div>
-      <div class="feat"><div class="i">📄</div><div><div class="t">Caseworker- &amp; court-ready</div><div class="d">One tap turns any date range into a clean, dated PDF — or export to CSV for taxes.</div></div></div>
-      <p class="muted">Free to log for 30 days. <span class="pill">FosterLog Pro</span> — a one-time purchase — keeps you logging, adds unlimited children, automatic iCloud backup, and PDF/CSV export.</p>
+      <div class="feat"><div class="i">👨‍👩‍👧</div><div><div class="t">Visits &amp; contact</div><div class="d">Family visits with before/after moods and attendance — including no-shows and cancellations.</div></div></div>
+      <div class="feat"><div class="i">⭐️</div><div><div class="t">Positive moments<span class="new">NEW</span></div><div class="d">Log wins and milestones in a tap. They get their own “Strengths &amp; Positive Moments” section in your PDF.</div></div></div>
+      <div class="feat"><div class="i">📞</div><div><div class="t">Communication log</div><div class="d">Calls, texts and emails with birth parents, attorneys, GAL and caseworkers — including “no answer” attempts.</div></div></div>
+      <div class="feat"><div class="i">⚖️</div><div><div class="t">Court &amp; custody</div><div class="d">Hearings, reviews and custody/placement changes, with reminders — and one tap to add them to your calendar.</div></div></div>
+      <div class="feat"><div class="i">🌙</div><div><div class="t">Respite care</div><div class="d">Who provided it, agency- or self-arranged, and how many nights.</div></div></div>
+      <div class="feat"><div class="i">💊</div><div><div class="t">Medications</div><div class="d">Flexible schedules, dose tracking and reminders you clear by confirming.</div></div></div>
+      <div class="feat"><div class="i">🧾</div><div><div class="t">Expenses, stipends &amp; mileage</div><div class="d">What you spend, what you receive, and your net cost per child.</div></div></div>
+      <div class="feat"><div class="i">📈</div><div><div class="t">Trends<span class="new">NEW</span></div><div class="d">Concerns vs. positive moments week by week, visit attendance, and the moods and behaviors you log most.</div></div></div>
+      <div class="feat"><div class="i">📄</div><div><div class="t">Caseworker- &amp; court-ready</div><div class="d">Any date range becomes a clean, dated PDF — or a CSV for taxes. Every entry shows when it was recorded and if it was edited.</div></div></div>
+      <div class="feat"><div class="i">🔐</div><div><div class="t">Backup &amp; restore<span class="new">NEW</span></div><div class="d">Save everything to one password-protected file you keep, and restore it on any iPhone. Free for everyone.</div></div></div>
+      <div class="feat"><div class="i">🇨🇦</div><div><div class="t">English &amp; français<span class="new">NEW</span></div><div class="d">The app follows your iPhone’s language.</div></div></div>
+      <p class="muted">Free to log for 30 days. <span class="pill">FosterLog Pro</span> — a one-time purchase, shareable with Family Sharing — keeps you logging, adds unlimited children, automatic iCloud backup, and PDF/CSV export.</p>
     </section>
 
     <section id="support">
       <h2>Support</h2>
       <p>Questions, bugs, or feature requests? We’d love to hear from you.</p>
-      <p><strong>Email:</strong> <a href="mailto:techbitsmix@gmail.com">techbitsmix@gmail.com</a></p>
-      <p class="muted">We aim to reply within a couple of business days. When reporting a bug, it helps to include your iPhone model and iOS version.</p>
-      <h3>Common questions</h3>
-      <p><strong>Where is my data stored?</strong> Only on your iPhone. With FosterLog Pro you can also back up to your own private iCloud.</p>
-      <p><strong>Can I export records for my caseworker or court?</strong> Yes — use Export to create a dated PDF, or a CSV for expenses and mileage.</p>
-      <p><strong>How do I move my data to a new phone?</strong> Enable iCloud backup (Pro), then sign in to the same iCloud account on the new device.</p>
+      <p><strong>Email:</strong> <a href="mailto:techbitsmix@gmail.com">techbitsmix@gmail.com</a> — or in the app, Settings ▸ Support &amp; feedback.</p>
+      <p class="muted">We aim to reply within a couple of business days. Your app version is shown at the bottom of Settings — please include it with bug reports.</p>
+
+      <h3>Where is my data stored?</h3>
+      <p>On your iPhone. With FosterLog Pro it also syncs to your own private iCloud. We never see it. See the <a href="privacy.html">privacy policy</a>.</p>
+
+      <h3>How do I move to a new phone?</h3>
+      <p>Two ways: <strong>(1)</strong> Settings ▸ Backup &amp; restore ▸ Create backup file, save it to Files or AirDrop it to your computer, then on the new phone choose “Restore from a backup file…”. <strong>(2)</strong> With FosterLog Pro, sign in to the same iCloud account on the new phone.</p>
+
+      <h3>I forgot my backup password.</h3>
+      <p>Password-protected backups are encrypted on your phone and the password is never stored anywhere, so nobody — including us — can open the file without it. Create a new backup from the phone that still has your records.</p>
+
+      <h3>Can I export records for my caseworker or court?</h3>
+      <p>Yes — the Export tab creates a dated PDF for any date range, or a CSV for expenses and mileage.</p>
+
+      <h3>Can my partner and I both use it?</h3>
+      <p>FosterLog Pro works with Apple Family Sharing, so one purchase covers your household. Live syncing of the same records between two caregivers is on the roadmap.</p>
+
+      <h3>Does it work in French?</h3>
+      <p>Yes. If your iPhone is set to French, FosterLog — including your PDF reports — appears in French.</p>
     </section>
 
     <section id="privacy">
-      <h2>Privacy Policy</h2>
-      <p class="muted">Last updated: June 2026</p>
-      <p><strong>FosterLog does not collect, transmit, sell, or share your personal information.</strong> Everything you enter stays on your device. The developer cannot see your data.</p>
-
-      <h3>What the app stores</h3>
-      <p>All information you enter — children’s details, visit and contact logs, communication logs, behavior and health notes, medications, appointments, court and custody events, expenses, mileage, contacts, photos, videos, and documents — is stored locally on your device. There is no developer server, no third-party analytics or advertising, and no account or login.</p>
-
-      <h3>Optional iCloud backup (FosterLog Pro)</h3>
-      <p>If you purchase FosterLog Pro and enable backup, your data syncs to your own private iCloud account via Apple’s iCloud/CloudKit, so you don’t lose it if you change or reset your device. This data lives in your personal Apple account and is governed by <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. The developer cannot access your iCloud data. You can turn backup off anytime in Settings.</p>
-
-      <h3>Camera, photos, and notifications</h3>
-      <p>The camera and photo library are used only when you choose to scan a document or attach a photo or video; those files stay on your device (and in your iCloud backup if enabled). Medication and appointment reminders are scheduled locally and are not sent through any server.</p>
-
-      <h3>Purchases</h3>
-      <p>FosterLog Pro is a one-time in-app purchase processed by Apple. We do not receive or store your payment information.</p>
-
-      <h3>Children’s information</h3>
-      <p>FosterLog is intended for adult caregivers. Information you record about children never leaves your device (except to your own iCloud, if you enable backup). We do not knowingly collect information from anyone.</p>
-
-      <h3>Data deletion</h3>
-      <p>Your data is stored only on your device, so you control it completely — delete individual records, archive a child, or use “Delete all data” in Settings. Deleting the app removes its on-device data.</p>
-
-      <h3>Contact</h3>
-      <p>Questions about privacy? Email <a href="mailto:techbitsmix@gmail.com">techbitsmix@gmail.com</a>.</p>
+      <h2>Privacy</h2>
+      <p><strong>FosterLog collects nothing.</strong> No account, no analytics, no server. Read the full <a href="privacy.html">privacy policy</a> (<a href="fr/privacy.html">en français</a>).</p>
     </section>
 
   </div>
 
   <footer>
     FosterLog is a personal record-keeping tool, not legal, medical, or tax advice.<br>
-    © 2026 FosterLog. All rights reserved.
+    © 2026 TechBitsMix
   </footer>
 </body>
 </html>
